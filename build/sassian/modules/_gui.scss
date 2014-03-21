@@ -1,0 +1,43 @@
+html {
+	font-size: 62.5%;
+}
+
+body {
+	@include rem(font-size, 1.4); // utilities/_rem.scss
+	color: $colour-base;
+	font-family: $font-secondary;
+}
+
+h1, h2, h3 {
+	font-family: $font-primary; // _variables.scss
+}
+
+h1 {
+	@include rem(font-size, 1.8); // utilities/_rem.scss
+}
+
+h2 {
+	@include rem(font-size, 1.6); // utilities/_rem.scss
+}
+
+h3 {
+	@include rem(font-size, 1.4); // utilities/_rem.scss
+}
+
+p {
+	line-height: 1.8em;
+	margin: 0 0 20px;
+}
+
+a {
+	@include transition(color 0.2s ease-in-out);
+	color: $colour-tertiary;
+	text-decoration: none;
+
+	&:hover,
+	&:active,
+	&:focus {
+		color: darken($colour-tertiary, 20%);
+		text-decoration: underline;
+	}
+}
