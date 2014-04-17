@@ -29,6 +29,9 @@ About:
 
 // rem
 @import "utilities/rem";
+
+// rem
+@import "utilities/fontawesome.scss";
  
 
 /******************************************************************
@@ -61,4 +64,8 @@ About:
 
 ******************************************************************/
 
-@import "views/home";
+@import "views/intro";
+
+@import "views/blog";
+
+@import "views/about";

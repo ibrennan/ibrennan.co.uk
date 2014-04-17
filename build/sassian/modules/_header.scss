@@ -1,0 +1,44 @@
+header {
+	padding: 20px 0;
+
+	a.logo {
+		@include retina-sprite(logo);
+		float: left;
+		opacity: 0.2;
+
+		&:hover {
+			opacity: 0.8;
+		}
+	}
+	a.mobile-nav {
+		display: none;
+	}
+	nav {
+		display: none;
+		float: right;
+
+		a {
+			color: $colour-base;
+
+			&:hover,
+			&:active,
+			&:focus {
+				color: $colour-tertiary;
+			}
+		}
+	}
+
+	@include breakpoint(tablet){
+
+		nav {
+			display: block;
+
+			li {
+				float: left;
+				padding: 8px 0 0 30px;
+			}
+
+		}
+
+	}
+}

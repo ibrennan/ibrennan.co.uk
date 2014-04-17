@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[Ian Brennan on Medium]]></title>
+        <description><![CDATA[Latest posts by Ian Brennan on medium.com]]></description>
+        <link>https://medium.com/@nannerb</link>
+        <image>
+            <url>https://d262ilb51hltx0.cloudfront.net/fit/c/150/150/0*fsj9ft--OJ1Vz2vP.jpg</url>
+            <title>Ian Brennan on Medium</title>
+            <link>https://medium.com/@nannerb</link>
+        </image>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Thu, 17 Apr 2014 14:57:13 GMT</lastBuildDate>
+        <atom:link href="https://medium.com/feed/@nannerb" rel="self" type="application/rss+xml"/>
+        <author><![CDATA[Ian Brennan]]></author>
+        <webMaster><![CDATA[yourfriends@medium.com]]></webMaster>
+        <atom:link href="http://medium.superfeedr.com" rel="hub"/>
+        <item>
+            <title><![CDATA[Automated responsive screenshots]]></title>
+            <description><![CDATA[<div class="medium-feed-item"><p class="medium-feed-snippet">There&#8217;s a problem with modular site development, the bigger your platform gets the harder it becomes to regression test.</p></div>]]></description>
+            <link>https://medium.com/p/197fad8c1840</link>
+            <guid isPermaLink="true">https://medium.com/p/197fad8c1840</guid>
+            <dc:creator><![CDATA[Ian Brennan]]></dc:creator>
+            <pubDate>Wed, 16 Apr 2014 15:33:10 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Windows Phone 8 sales will surpass iOS within 24 months]]></title>
+            <description><![CDATA[<div class="medium-feed-item"><p class="medium-feed-snippet">Microsoft have got it right, they finally understand the connected world and are putting plans in place that will see them leap frog Apple&#8230;</p></div>]]></description>
+            <link>https://medium.com/p/792aaa0f7287</link>
+            <guid isPermaLink="true">https://medium.com/p/792aaa0f7287</guid>
+            <dc:creator><![CDATA[Ian Brennan]]></dc:creator>
+            <pubDate>Mon, 14 Apr 2014 17:25:23 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Google Android Wear is here ]]></title>
+            <description><![CDATA[<div class="medium-feed-item"><p class="medium-feed-snippet">First published by Marketing and AnalogFolk.&#10;&#10;Android Wear, Google&#8217;s vision for the Smartwatch, was unveiled yesterday (18 March).</p></div>]]></description>
+            <link>https://medium.com/p/c7c922426911</link>
+            <guid isPermaLink="true">https://medium.com/p/c7c922426911</guid>
+            <dc:creator><![CDATA[Ian Brennan]]></dc:creator>
+            <pubDate>Mon, 14 Apr 2014 10:57:32 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Gesture control has arrived]]></title>
+            <description><![CDATA[<div class="medium-feed-item"><p class="medium-feed-snippet">Article first published by Marketing and AnalogFolk.</p></div>]]></description>
+            <link>https://medium.com/p/ef31bb65ced4</link>
+            <guid isPermaLink="true">https://medium.com/p/ef31bb65ced4</guid>
+            <dc:creator><![CDATA[Ian Brennan]]></dc:creator>
+            <pubDate>Mon, 14 Apr 2014 10:36:49 GMT</pubDate>
+        </item>
+    </channel>
+</rss>

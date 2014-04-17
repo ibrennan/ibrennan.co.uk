@@ -1,0 +1,51 @@
+.blog {
+
+	article {
+		@include rem(height, 40);
+		@include rem(padding, 1);
+
+		img {
+			margin-bottom: 10px;
+			width: 100%;
+		}
+	}
+
+	a {
+		color: $colour-base;
+
+		&:hover,
+		&:active,
+		&:focus {
+			color: $colour-tertiary;
+		}
+
+		&.logo-medium {
+			@include rem(font-size, 1.6);
+			height: 44px;
+			line-height: 44px;
+
+			&:before {
+				@include retina-sprite(medium);
+				content: 'Medium';
+				float: left;
+				margin-right: 10px;
+			}
+		}
+	}
+
+	p {
+		color: lighten($colour-base, 10%);
+	}
+
+	h3 {
+		@include rem(font-size, 2);
+	}
+
+	@include breakpoint(tablet){
+
+		h3 {
+			@include rem(min-height, 4.5);
+		}
+
+	}
+}

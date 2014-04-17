@@ -34,6 +34,13 @@ module.exports = function (grunt) {
 						src: ['js/**'],
 						dest: '../www/_includes/',
 						filter: 'isFile'
+					},
+					{
+						// Copy all fonts
+						expand: true,
+						src: ['fonts/**'],
+						dest: '../www/_includes/',
+						filter: 'isFile'
 					}
 				]
 			}
