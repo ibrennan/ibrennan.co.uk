@@ -71,13 +71,11 @@ ga('send', 'pageview');
 
 			<div class="grid-12">
 
-				<a href="https://medium.com/interesting-technology-reads/792aaa0f7287" title="Windows Phone 8 sales will surpass iOS within 24 months">
+				<a href="https://medium.com/p/8b7599cfd943" title="Facebook will start allowing users to log into third-party apps anonymously">
 
 					<span class="sub">Blog</span>
 
-					<h2>Windows Phone 8 sales will surpass iOS within 24 months</h2>
-
-					<h3>Microsoft finally have the strategy right, and Apple should be worried</h3>
+					<h2>Facebook will start allowing users to log into third-party apps anonymously</h2>
 
 				</a>
 
@@ -90,6 +88,15 @@ ga('send', 'pageview');
 	<section class="blog" id="blog">
 
 		<div class="grid">
+
+			<article class="grid-4">
+				<a href="https://medium.com/p/8b7599cfd943" title="Facebook will start allowing users to log into third-party apps anonymously">
+					<h3>Facebook will allow users to log into apps anonymously</h3>
+					<img src="_includes/images/blog/5.jpg" alt="Facebook will start allowing users to log into third-party apps anonymously" />
+				</a>
+				<p>Mark Zuckerberg has announced that Facebook users will soon be able to sign into third-party applications anonymously.</p>
+				<a href="https://medium.com/p/8b7599cfd943" title="Facebook will start allowing users to log into third-party apps anonymously">Read article <i class="fa fa-arrow-circle-o-right"></i></a>
+	        </article>
 
 			<article class="grid-4">
 				<a href="https://medium.com/p/197fad8c1840" title="Automated responsive screenshots">
