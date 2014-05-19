@@ -71,11 +71,13 @@ ga('send', 'pageview');
 
 			<div class="grid-12">
 
-				<a href="https://medium.com/p/8b7599cfd943" title="Facebook will start allowing users to log into third-party apps anonymously">
+				<a href="https://medium.com/p/cd60328a4584" title="Development Core Hours, stay focussed">
 
 					<span class="sub">Blog</span>
 
-					<h2>Facebook will start allowing users to log into third-party apps anonymously</h2>
+					<h2>Development Core Hours, stay focussed</h2>
+
+					<p>A distraction free period of time for developers to focus on their code, and build without interruption.</p>
 
 				</a>
 
@@ -88,6 +90,15 @@ ga('send', 'pageview');
 	<section class="blog" id="blog">
 
 		<div class="grid">
+
+			<article class="grid-4">
+				<a href="https://medium.com/p/cd60328a4584" title="Development Core Hours, stay focussed">
+					<h3>Development Core Hours, stay focussed</h3>
+					<img src="_includes/images/blog/6.jpg" alt="Development Core Hours, stay focussed" />
+				</a>
+				<p>A distraction free period of time for developers to focus on their code, and build without interruption.</p>
+				<a href="https://medium.com/p/8b7599cfd943" title="Facebook will start allowing users to log into third-party apps anonymously">Read article <i class="fa fa-arrow-circle-o-right"></i></a>
+	        </article>
 
 			<article class="grid-4">
 				<a href="https://medium.com/p/8b7599cfd943" title="Facebook will start allowing users to log into third-party apps anonymously">
