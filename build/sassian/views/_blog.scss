@@ -47,5 +47,8 @@
 			@include rem(min-height, 4.5);
 		}
 
+		.extended h3 {
+			@include rem(min-height, 6.5);
+		}
 	}
 }

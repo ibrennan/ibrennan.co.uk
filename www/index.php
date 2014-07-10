@@ -71,13 +71,13 @@ ga('send', 'pageview');
 
 			<div class="grid-12">
 
-				<a href="https://medium.com/p/cd60328a4584" title="Development Core Hours, stay focussed">
+				<a href="https://medium.com/@nannerb/mind-controlled-google-glass-c415e7f991a7" title="Mind controlled Google Glass">
 
 					<span class="sub">Blog</span>
 
-					<h2>Development Core Hours, stay focussed</h2>
+					<h2>Mind controlled Google Glass</h2>
 
-					<p>A distraction free period of time for developers to focus on their code, and build without interruption.</p>
+					<p>No hands, no voice, just thoughts.</p>
 
 				</a>
 
@@ -92,12 +92,30 @@ ga('send', 'pageview');
 		<div class="grid">
 
 			<article class="grid-4">
+				<a href="http://www.creativebloq.com/netmag/google-io-8-biggest-announcements-impact-developers-61412137" title="Google I/O: the 8 biggest announcements that impact developers">
+					<h3>Google I/O: The 8 biggest announcements that impact developers</h3>
+					<img src="_includes/images/blog/8.jpg" alt="Google I/O: the 8 biggest announcements that impact developers" />
+				</a>
+				<p>Big announcements from Google's annual developer conference, and what they mean to you. Written for Net Magazine.</p>
+				<a href="http://www.creativebloq.com/netmag/google-io-8-biggest-announcements-impact-developers-61412137" title="Google I/O: the 8 biggest announcements that impact developers">Read article <i class="fa fa-arrow-circle-o-right"></i></a>
+	        </article>
+
+	        <article class="grid-4">
+				<a href="http://www.marketingmagazine.co.uk/article/1300527/launch-hype-google-glass-enough-drop-glasshole-stigma" title="Is the launch hype of Google Glass enough to drop the 'glasshole' stigma?">
+					<h3>Is the launch hype of Google Glass enough to drop the 'glasshole' stigma?</h3>
+					<img src="_includes/images/blog/7.jpg" alt="Is the launch hype of Google Glass enough to drop the 'glasshole' stigma?" />
+				</a>
+				<p>Will the £1,000 wearable device will deliver any real world value to brands? Written for Marketing.</p>
+				<a href="http://www.marketingmagazine.co.uk/article/1300527/launch-hype-google-glass-enough-drop-glasshole-stigma" title="Is the launch hype of Google Glass enough to drop the 'glasshole' stigma?">Read article <i class="fa fa-arrow-circle-o-right"></i></a>
+	        </article>
+
+			<article class="grid-4 extended">
 				<a href="https://medium.com/p/cd60328a4584" title="Development Core Hours, stay focussed">
 					<h3>Development Core Hours, stay focussed</h3>
 					<img src="_includes/images/blog/6.jpg" alt="Development Core Hours, stay focussed" />
 				</a>
 				<p>A distraction free period of time for developers to focus on their code, and build without interruption.</p>
-				<a href="https://medium.com/p/8b7599cfd943" title="Facebook will start allowing users to log into third-party apps anonymously">Read article <i class="fa fa-arrow-circle-o-right"></i></a>
+				<a href="https://medium.com/p/cd60328a4584" title="Development Core Hours, stay focussed">Read article <i class="fa fa-arrow-circle-o-right"></i></a>
 	        </article>
 
 			<article class="grid-4">
@@ -198,9 +216,9 @@ ga('send', 'pageview');
 
 			<div class="grid-8">
 
-				<h2>Ian Brennan - Head of Development / AnalogFolk</h2>
+				<h2>Ian Brennan - Head of Technical Concepting / AnalogFolk</h2>
 
-				<p>I'm a passionate Creative Technologist who heads up the development team at AnalogFolk. Leading a team of talented developers who regularly ship exciting projects across for a wide variety of clients.</p>
+				<p>I'm a passionate Creative Technologist who heads up technical concepting at AnalogFolk. Leading a team of talented developers who regularly ship exciting projects across for a wide variety of clients.</p>
 
 				<p>Using languages and tools such as JavaScript, Sass, CasperJS, PHP, Node, and Grunt, I like to rapidly prototype technically creative products and ideas.</p>
 
