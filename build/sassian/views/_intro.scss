@@ -3,13 +3,6 @@
 	background-size: cover;
 	position: relative;
 
-	.pattern-fill {
-		background: image-url("bg-dot.png");
-		@include rem(margin-bottom,-30);
-		opacity: 0.2;
-		width: 100%;
-	}
-
 	.grid,
 	.pattern-fill {
 		@include rem(height,30);

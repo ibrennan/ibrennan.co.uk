@@ -35,6 +35,10 @@
 
 	p {
 		color: lighten($colour-base, 10%);
+
+		a {
+			color: darken($colour-tertiary, 20%);
+		}
 	}
 
 	h3 {

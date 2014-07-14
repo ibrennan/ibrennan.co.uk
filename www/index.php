@@ -52,8 +52,8 @@ ga('send', 'pageview');
 					<ul>
 						<li><a href="#" title="Home">Home</a></li>
 						<li><a href="#blog" title="Blog">Blog</a></li>
-						<li><a href="#about" title="About">About</a></li>
 						<li><a href="#projects" title="Projects">Projects</a></li>
+						<li><a href="#about" title="About">About</a></li>
 					</ul>
 				</nav>
 
@@ -204,6 +204,61 @@ ga('send', 'pageview');
 
 	</section><!-- .blog -->
 
+	<section class="projects" id="projects">
+
+		<div class="grid">
+
+			<div class="grid-12">
+				<h1>Projects</h1>
+				<p>Below are a selection of some of the projects I've been working on.</p>
+			</div>
+
+			<article class="grid-4">
+				<a href="https://github.com/ibrennan/Sassian" title="Sassian - A DRY, lightweight, and powerful Compass boilerplate">
+					<h3>Sassian</h3>
+					<img src="_includes/images/projects/sassian.jpg" alt="Sassian - A DRY, lightweight, and powerful Compass boilerplate" />
+				</a>
+				<p>A DRY, lightweight, and powerful Compass boilerplate</p>
+				<a href="https://github.com/ibrennan/Sassian" title="Sassian - A DRY, lightweight, and powerful Compass boilerplate">View on Github <i class="fa fa-arrow-circle-o-right"></i></a>
+	        </article>
+
+	        <article class="grid-4">
+				<a href="https://github.com/ibrennan/automation" title="CasperJS Tests and Automation">
+					<h3>CasperJS Tests and Automation</h3>
+					<img src="_includes/images/projects/automation.jpg" alt="CasperJS Tests and Automation" />
+				</a>
+				<p>Various automated CasperJS scripts for testing and taking the leg work out of tasks</p>
+				<a href="https://github.com/ibrennan/automation" title="CasperJS Tests and Automation">View on Github <i class="fa fa-arrow-circle-o-right"></i></a>
+	        </article>
+
+	        <article class="grid-4">
+				<a href="http://www.duluxtradepaintexpert.co.uk/" title="Dulux Trade Paint Expert">
+					<h3>Dulux Trade Paint Expert</h3>
+					<img src="_includes/images/projects/dulux-trade-paint-expert.jpg" alt="Dulux Trade Paint Expert" />
+				</a>
+				<p>Lead the team of 6 developers at <a href="http://analogfolk.com/" target="_blank" title="AnalogFolk">AnalogFolk</a> to create a large platform build. Tech used: Sass, Grunt, Backbone, JSP, PHP, API Modelling</p>
+				<a href="http://www.duluxtradepaintexpert.co.uk/" title="Dulux Trade Paint Expert">View website <i class="fa fa-arrow-circle-o-right"></i></a>
+	        </article>
+
+	        <article class="grid-4">
+				<a href="http://www.dulux.co.uk/" title="Dulux.co.uk">
+					<h3>Dulux.co.uk</h3>
+					<img src="_includes/images/projects/dulux-trade-paint-expert.jpg" alt="Dulux.co.uk" />
+				</a>
+				<p>Implemented infrastructure and process to ensure the retained maintenance team at <a href="http://analogfolk.com/" target="_blank" title="AnalogFolk">AnalogFolk</a> can perform weekly releases to the platform.</p>
+				<a href="http://www.dulux.co.uk/" title="Dulux.co.uk">View website <i class="fa fa-arrow-circle-o-right"></i></a>
+	        </article>
+
+			<div class="grid-12">
+
+				<hr>
+
+			</div><!-- .grid-12 -->
+
+		</div><!-- .grid -->
+
+	</section><!-- .projects -->
+
 	<section class="about" id="about">
 
 		<div class="grid">
@@ -235,22 +290,6 @@ ga('send', 'pageview');
 		</div><!-- .grid -->
 
 	</section><!-- .about -->
-
-	<section class="projects" id="projects">
-
-		<div class="grid">
-
-			<div class="grid-12">
-
-				<h1>Projects</h1>
-
-				<p>Coming soon</p>
-
-			</div><!-- .grid-12 -->
-
-		</div><!-- .grid -->
-
-	</section><!-- .projects -->
 
 	<footer>
 
