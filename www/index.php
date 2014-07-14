@@ -22,7 +22,7 @@
 	####################################################################-->
 
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
-	<link href='_includes/css/main.css?v=1' rel='stylesheet' type='text/css'>
+	<link href='_includes/css/main.css?v=2' rel='stylesheet' type='text/css'>
 
     <script src="_includes/js/vendor/modernizr.js"></script>
 
