@@ -243,7 +243,7 @@ ga('send', 'pageview');
 	        <article class="grid-4">
 				<a href="http://www.dulux.co.uk/" title="Dulux.co.uk">
 					<h3>Dulux.co.uk</h3>
-					<img src="_includes/images/projects/dulux-trade-paint-expert.jpg" alt="Dulux.co.uk" />
+					<img src="_includes/images/projects/dulux.jpg" alt="Dulux.co.uk" />
 				</a>
 				<p>Implemented infrastructure and process to ensure the retained maintenance team at <a href="http://analogfolk.com/" target="_blank" title="AnalogFolk">AnalogFolk</a> can perform weekly releases to the platform.</p>
 				<a href="http://www.dulux.co.uk/" title="Dulux.co.uk">View website <i class="fa fa-arrow-circle-o-right"></i></a>
