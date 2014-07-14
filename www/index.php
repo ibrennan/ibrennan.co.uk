@@ -232,6 +232,15 @@ ga('send', 'pageview');
 	        </article>
 
 	        <article class="grid-4">
+				<a href="https://storify.com/nannerb/analogfolk-hack-festival" title="AnalogFolk Hack Festival on Storify">
+					<h3>AnalogFolk Hack Festival</h3>
+					<img src="_includes/images/projects/hack-festival.jpg" alt="AnalogFolk Hack Festival" />
+				</a>
+				<p>Organised a weekend long Hackathon at <a href="http://analogfolk.com/" target="_blank" title="AnalogFolk">AnalogFolk</a></p>
+				<a href="https://storify.com/nannerb/analogfolk-hack-festival" title="AnalogFolk Hack Festival on Storif">View on Storify <i class="fa fa-arrow-circle-o-right"></i></a>
+	        </article>
+
+	        <article class="grid-4">
 				<a href="http://www.duluxtradepaintexpert.co.uk/" title="Dulux Trade Paint Expert">
 					<h3>Dulux Trade Paint Expert</h3>
 					<img src="_includes/images/projects/dulux-trade-paint-expert.jpg" alt="Dulux Trade Paint Expert" />
