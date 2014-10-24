@@ -93,10 +93,10 @@ ga('send', 'pageview');
 
 			<article class="grid-4">
 				<a href="https://medium.com/@nannerb/mind-controlled-google-glass-c415e7f991a7" title="Mind controlled Google Glass">
-					<h3>Mind controlled Google Glass</h3>
+					<h3>Mind controlled Google Glass, no hands, no voice, just thoughts.</h3>
 					<img src="_includes/images/blog/9.jpg" alt="Mind controlled Google Glass" />
 				</a>
-				<p>No hands, no voice, just thoughts.</p>
+				<p>No touching, no awkward voice controls, just think of what you want to do and away you go.</p>
 				<a href="https://medium.com/@nannerb/mind-controlled-google-glass-c415e7f991a7" title="Mind controlled Google Glass">Read article <i class="fa fa-arrow-circle-o-right"></i></a>
 	        </article>
 
