@@ -22,7 +22,7 @@
 	####################################################################-->
 
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
-	<link href='_includes/css/main.css?v=2' rel='stylesheet' type='text/css'>
+	<link href='_includes/css/main.css?v=3' rel='stylesheet' type='text/css'>
 
     <script src="_includes/js/vendor/modernizr.js"></script>
 
@@ -52,7 +52,8 @@ ga('send', 'pageview');
 					<ul>
 						<li><a href="#" title="Home">Home</a></li>
 						<li><a href="#blog" title="Blog">Blog</a></li>
-						<li><a href="#projects" title="Projects">Projects</a></li>
+						<li><a href="#projects" title="Projects">Hacks &amp; Projects</a></li>
+						<li><a href="#portfolio" title="Portfolio">Portfolio</a></li>
 						<li><a href="#about" title="About">About</a></li>
 					</ul>
 				</nav>
@@ -118,60 +119,6 @@ ga('send', 'pageview');
 				<a href="http://www.marketingmagazine.co.uk/article/1300527/launch-hype-google-glass-enough-drop-glasshole-stigma" title="Is the launch hype of Google Glass enough to drop the 'glasshole' stigma?">Read article <i class="fa fa-arrow-circle-o-right"></i></a>
 	        </article>
 
-			<article class="grid-4 extended">
-				<a href="https://medium.com/p/cd60328a4584" title="Development Core Hours, stay focussed">
-					<h3>Development Core Hours, stay focussed</h3>
-					<img src="_includes/images/blog/6.jpg" alt="Development Core Hours, stay focussed" />
-				</a>
-				<p>A distraction free period of time for developers to focus on their code, and build without interruption.</p>
-				<a href="https://medium.com/p/cd60328a4584" title="Development Core Hours, stay focussed">Read article <i class="fa fa-arrow-circle-o-right"></i></a>
-	        </article>
-
-			<article class="grid-4">
-				<a href="https://medium.com/p/8b7599cfd943" title="Facebook will start allowing users to log into third-party apps anonymously">
-					<h3>Facebook will allow users to log into apps anonymously</h3>
-					<img src="_includes/images/blog/5.jpg" alt="Facebook will start allowing users to log into third-party apps anonymously" />
-				</a>
-				<p>Mark Zuckerberg has announced that Facebook users will soon be able to sign into third-party applications anonymously.</p>
-				<a href="https://medium.com/p/8b7599cfd943" title="Facebook will start allowing users to log into third-party apps anonymously">Read article <i class="fa fa-arrow-circle-o-right"></i></a>
-	        </article>
-
-			<article class="grid-4">
-				<a href="https://medium.com/p/197fad8c1840" title="Automated responsive screenshots">
-					<h3>Automated responsive screenshots</h3>
-					<img src="_includes/images/blog/4.jpg" alt="Automated responsive screenshots" />
-				</a>
-				<p>There's a problem with modular site development, the bigger your platform gets the harder it becomes to regression test.</p>
-				<a href="https://medium.com/p/197fad8c1840" title="Automated responsive screenshots">Read article <i class="fa fa-arrow-circle-o-right"></i></a>
-	        </article>
-
-	        <article class="grid-4">
-				<a href="https://medium.com/p/792aaa0f7287" title="Windows Phone 8 sales will surpass iOS within 24 months">
-					<h3>Windows Phone 8 sales will surpass iOS within 24 months</h3>
-					<img src="_includes/images/blog/3.jpg" alt="Windows Phone 8 sales will surpass iOS within 24 months" />
-				</a>
-				<p>Microsoft have got it right, they finally understand the connected world and are putting plans in place that will see them leap frog Apple…</p>
-				<a href="https://medium.com/p/792aaa0f7287" title="Windows Phone 8 sales will surpass iOS within 24 months">Read article <i class="fa fa-arrow-circle-o-right"></i></a>
-	        </article>
-
-	        <article class="grid-4">
-				<a href="https://medium.com/p/c7c922426911" title="Google Android Wear is here&nbsp;">
-					<h3>Google Android Wear is here</h3>
-					<img src="_includes/images/blog/2.jpg" alt="Google Android Wear is here" />
-				</a>
-				<p>Google’s approach to positioning itself as the global supplier of technology and services is clever.</p>
-				<a href="https://medium.com/p/c7c922426911" title="Google Android Wear is here&nbsp;">Read article <i class="fa fa-arrow-circle-o-right"></i></a>
-	        </article>
-
-	        <article class="grid-4">
-				<a href="https://medium.com/p/ef31bb65ced4" title="Gesture control has arrived">
-					<h3>Gesture control has arrived</h3>
-					<img src="_includes/images/blog/1.jpg" alt="Gesture control has arrived" />
-				</a>
-				<p>With recent developments in gesture control and motion based technology, there is now a strong expectation that brands will be experimenting...</p>
-				<a href="https://medium.com/p/ef31bb65ced4" title="Gesture control has arrived">Read article <i class="fa fa-arrow-circle-o-right"></i></a>
-	        </article>
-
 			<?php
 			// Because Medium doesn't return images in the xml feed, I've decided to not do the below
 			// and instead take a manual approach.
@@ -218,17 +165,63 @@ ga('send', 'pageview');
 		<div class="grid">
 
 			<div class="grid-12">
-				<h1>Projects</h1>
-				<p>Below are a selection of some of the projects I've been working on.</p>
+				<h1>Hacks &amp; Projects</h1>
+				<p>Some of the fun hacks, side projects, and expirments I've worked on.</p>
+				<p>If you'd like to collaborate, or extend some of these further, then <a href="#about">get in touch!</a></p>
 			</div>
 
 			<article class="grid-4">
-				<a href="https://github.com/ibrennan/Sassian" title="Sassian - A DRY, lightweight, and powerful Compass boilerplate">
-					<h3>Sassian</h3>
-					<img src="_includes/images/projects/sassian.jpg" alt="Sassian - A DRY, lightweight, and powerful Compass boilerplate" />
+				<a href="http://instagram.com/p/tk5HETChew/?utm_source=partner&utm_medium=embed&utm_campaign=video&modal=true" title="iBeacons + Apple Swift">
+					<h3>iBeacons + Apple Swift</h3>
+					<img src="_includes/images/projects/ibeacons.jpg" alt="http://instagram.com/p/tk5HETChew/?utm_source=partner&utm_medium=embed&utm_campaign=video&modal=true" />
+				</a>
+				<p>Developed an application in Swift for iPhone's that delivers information as you pass in and out of Bluetooth beacon range. Completed in under 8 hours.</p>
+				<a href="http://instagram.com/p/tk5HETChew/?utm_source=partner&utm_medium=embed&utm_campaign=video&modal=true" title="iBeacons + Apple Swift">View on Instagram <i class="fa fa-arrow-circle-o-right"></i></a>
+	        </article>
+
+	        <article class="grid-4">
+				<a href="http://instagram.com/p/nK_JX6Chec/?utm_source=partner&utm_medium=embed&utm_campaign=video&modal=true" title="CSS3 Splitflap animations">
+					<h3>CSS3 Splitflap animations</h3>
+					<img src="_includes/images/projects/splitflap.jpg" alt="CSS3 Splitflap animations" />
+				</a>
+				<p>A split flap style animation that manipulated dom elements and allows for data visualisation.</p>
+				<a href="http://instagram.com/p/nK_JX6Chec/?utm_source=partner&utm_medium=embed&utm_campaign=video&modal=true" title="CSS3 Splitflap animations">View on Instagram <i class="fa fa-arrow-circle-o-right"></i></a>
+	        </article>
+
+	        <article class="grid-4">
+				<a href="https://scontent-a-lhr.xx.fbcdn.net/hvideo-xpa1/v/t43.1792-2/1737645_10151852323332452_1082960136_n.mp4?oh=11c490232cfaa331b3fb6fa445d16a58&oe=544A581A" title="LEAP Motion Colour Picker">
+					<h3>LEAP Motion Colour Picker</h3>
+					<img src="_includes/images/projects/colourpicker.jpg" alt="LEAP Motion Colour Picker" />
+				</a>
+				<p>Pick colours through gestures, JS to track the LEAP interaction, and a custom API to match RGB to actual Dulux colours.</p>
+				<a href="https://scontent-a-lhr.xx.fbcdn.net/hvideo-xpa1/v/t43.1792-2/1737645_10151852323332452_1082960136_n.mp4?oh=11c490232cfaa331b3fb6fa445d16a58&oe=544A581A" title="LEAP Motion Colour Picker">View video <i class="fa fa-arrow-circle-o-right"></i></a>
+	        </article>
+
+	        <article class="grid-4">
+				<a href="https://storify.com/nannerb/analogfolk-hack-festival" title="AnalogFolk Hack Festival on Storify">
+					<h3>AnalogFolk Hack Festival</h3>
+					<img src="_includes/images/projects/hack-festival.jpg" alt="AnalogFolk Hack Festival" />
+				</a>
+				<p>Organised a weekend long Hackathon at <a href="http://analogfolk.com/" target="_blank" title="AnalogFolk">AnalogFolk</a></p>
+				<a href="https://storify.com/nannerb/analogfolk-hack-festival" title="AnalogFolk Hack Festival on Storify">View on Storify <i class="fa fa-arrow-circle-o-right"></i></a>
+	        </article>
+
+	        <article class="grid-4">
+				<a href="https://vimeo.com/77587028" title="AnalogFolk LEAP interaction">
+					<h3>AnalogFolk LEAP interaction</h3>
+					<img src="_includes/images/projects/afleap.jpg" alt="AnalogFolk LEAP interaction" />
+				</a>
+				<p>Control the AnalogFolk website through LEAP Motion gestures.</p>
+				<a href="https://vimeo.com/77587028" title="AnalogFolk LEAP interaction">View video <i class="fa fa-arrow-circle-o-right"></i></a>
+	        </article>
+
+			<article class="grid-4">
+				<a href="https://github.com/ibrennan/critical-css-casperjs" title="Critical CSS - CasperJS">
+					<h3>Critical CSS - CasperJS</h3>
+					<img src="_includes/images/projects/sassian.jpg" alt="Critical CSS - CasperJS" />
 				</a>
 				<p>A DRY, lightweight, and powerful Compass boilerplate</p>
-				<a href="https://github.com/ibrennan/Sassian" title="Sassian - A DRY, lightweight, and powerful Compass boilerplate">View on Github <i class="fa fa-arrow-circle-o-right"></i></a>
+				<a href="https://github.com/ibrennan/critical-css-casperjs" title="Critical CSS - CasperJS">View on Github <i class="fa fa-arrow-circle-o-right"></i></a>
 	        </article>
 
 	        <article class="grid-4">
@@ -240,21 +233,56 @@ ga('send', 'pageview');
 				<a href="https://github.com/ibrennan/automation" title="CasperJS Tests and Automation">View on Github <i class="fa fa-arrow-circle-o-right"></i></a>
 	        </article>
 
-	        <article class="grid-4">
-				<a href="https://storify.com/nannerb/analogfolk-hack-festival" title="AnalogFolk Hack Festival on Storify">
-					<h3>AnalogFolk Hack Festival</h3>
-					<img src="_includes/images/projects/hack-festival.jpg" alt="AnalogFolk Hack Festival" />
-				</a>
-				<p>Organised a weekend long Hackathon at <a href="http://analogfolk.com/" target="_blank" title="AnalogFolk">AnalogFolk</a></p>
-				<a href="https://storify.com/nannerb/analogfolk-hack-festival" title="AnalogFolk Hack Festival on Storif">View on Storify <i class="fa fa-arrow-circle-o-right"></i></a>
+	        
+
+			<div class="grid-12">
+
+				<hr>
+
+			</div><!-- .grid-12 -->
+
+		</div><!-- .grid -->
+
+	</section><!-- .projects -->
+
+	<section class="projects" id="portfolio">
+
+		<div class="grid">
+
+			<div class="grid-12">
+				<h1>Portfolio</h1>
+			</div>
+
+			<article class="grid-4">
+				<h3>Data Visualisation</h3>
+				<img src="_includes/images/projects/dulux-data.jpg" alt="Data Visualisation" />
+
+				<p>Born from a hack experiment, each time a colour is viewed on Dulux.co.uk, one of the split flaps animates and gives a real time representation of colour trends. Tech used: CSS3, live data streaming and modelling (JS and PHP).</p>
+	        </article>
+
+			<article class="grid-4">
+			
+				<h3>Dulux MixLab</h3>
+				<img src="_includes/images/projects/dulux-mixlab.jpg" alt="Dulux MixLab" />
+
+				<p>Concept and Technical Leadership at <a href="http://analogfolk.com/" target="_blank" title="AnalogFolk">AnalogFolk</a> for an offline, touch screen, interactive application. Rolled out across 100's of stores UK wide. Tech used: Sass, Angular JS, PHP, API Modelling</p>
 	        </article>
 
 	        <article class="grid-4">
+				<a href="http://www.analogfolk.com" title="AnalogFolk">
+					<h3>AnalogFolk</h3>
+					<img src="_includes/images/projects/analogfolk.jpg" alt="AnalogFolk" />
+				</a>
+				<p>Lead the team of 3 developers to build and deploy the new <a href="http://analogfolk.com/" target="_blank" title="AnalogFolk">AnalogFolk</a> website. Tech used: PHP, Wordpress, Sass, History API, JS</p>
+				<a href="http://www.analogfolk.com" title="AnalogFolk">View website <i class="fa fa-arrow-circle-o-right"></i></a>
+	        </article>
+
+			<article class="grid-4">
 				<a href="http://www.duluxtradepaintexpert.co.uk/" title="Dulux Trade Paint Expert">
 					<h3>Dulux Trade Paint Expert</h3>
 					<img src="_includes/images/projects/dulux-trade-paint-expert.jpg" alt="Dulux Trade Paint Expert" />
 				</a>
-				<p>Lead the team of 6 developers at <a href="http://analogfolk.com/" target="_blank" title="AnalogFolk">AnalogFolk</a> to create a large platform build. Tech used: Sass, Grunt, Backbone, JSP, PHP, API Modelling</p>
+				<p>Lead the team of 7 developers at <a href="http://analogfolk.com/" target="_blank" title="AnalogFolk">AnalogFolk</a> to create a large platform build. Tech used: Sass, Grunt, Backbone, JSP, PHP, API Modelling</p>
 				<a href="http://www.duluxtradepaintexpert.co.uk/" title="Dulux Trade Paint Expert">View website <i class="fa fa-arrow-circle-o-right"></i></a>
 	        </article>
 
@@ -275,7 +303,9 @@ ga('send', 'pageview');
 
 		</div><!-- .grid -->
 
-	</section><!-- .projects -->
+	</section><!-- #portfolio -->
+
+	
 
 	<section class="about" id="about">
 
