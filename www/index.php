@@ -71,13 +71,13 @@ ga('send', 'pageview');
 
 			<div class="grid-12">
 
-				<a href="https://medium.com/@nannerb/mind-controlled-google-glass-c415e7f991a7" title="Mind controlled Google Glass">
+				<a href="https://medium.com/@nannerb/pixel-perfect-design-and-development-on-the-iphone-6-and-6-plus-11dac9f4fa4e" title="Pixel perfect design and development on the iPhone 6 and 6 Plus">
 
 					<span class="sub">Blog</span>
 
-					<h2>Mind controlled Google Glass</h2>
+					<h2>Pixel perfect design and development on the iPhone 6 and 6 Plus</h2>
 
-					<p>No hands, no voice, just thoughts.</p>
+					<p>Apple have introduced support for 3x images on the iPhone 6 Plus, find out what this means for you...</p>
 
 				</a>
 
@@ -90,6 +90,15 @@ ga('send', 'pageview');
 	<section class="blog" id="blog">
 
 		<div class="grid">
+
+			<article class="grid-4">
+				<a href="https://medium.com/@nannerb/mind-controlled-google-glass-c415e7f991a7" title="Mind controlled Google Glass">
+					<h3>Mind controlled Google Glass</h3>
+					<img src="_includes/images/blog/9.jpg" alt="Mind controlled Google Glass" />
+				</a>
+				<p>No hands, no voice, just thoughts.</p>
+				<a href="https://medium.com/@nannerb/mind-controlled-google-glass-c415e7f991a7" title="Mind controlled Google Glass">Read article <i class="fa fa-arrow-circle-o-right"></i></a>
+	        </article>
 
 			<article class="grid-4">
 				<a href="http://www.creativebloq.com/netmag/google-io-8-biggest-announcements-impact-developers-61412137" title="Google I/O: the 8 biggest announcements that impact developers">
