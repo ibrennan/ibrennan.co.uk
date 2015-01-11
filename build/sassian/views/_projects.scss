@@ -1,3 +1,17 @@
 .projects {
-	@extend .blog;
+
+	article {
+		@include rem(height, 40);
+	}
+
+	@include breakpoint(tablet){
+
+		h3 {
+			@include rem(min-height, 4.5);
+		}
+
+		.extended h3 {
+			@include rem(min-height, 6.5);
+		}
+	}
 }

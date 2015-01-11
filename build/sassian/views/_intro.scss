@@ -1,5 +1,5 @@
 .intro {
-	background: image-url("blog/intro.jpg") #000 center center;
+	background: #083343 center center;
 	background-size: cover;
 	position: relative;
 
@@ -8,12 +8,16 @@
 		@include rem(height,30);
 	}
 
-	a {
+	.intro-text {
 		@include rem(bottom,3);
-		color: #fff;
 		left: 0;
 		padding: 0 $grid-gutter;
 		position: absolute;
+	}
+
+	a,
+	p {
+		color: #fff;
 
 		&:hover {
 			text-decoration: none;
@@ -38,6 +42,14 @@
 		opacity: 0.8;
 	}
 
+	/*
+		Stylings for medium feed
+	*/
+	.medium-feed-image,
+	.medium-feed-link {
+		display: none;
+	}
+
 	@include breakpoint(tablet) {
 
 		.pattern-fill {
@@ -49,7 +61,7 @@
 			@include rem(height,60);
 		}
 
-		a {
+		.intro-text {
 			@include rem(bottom,5);
 			max-width: 70%;
 		}

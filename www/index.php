@@ -1,3 +1,9 @@
+<?php
+	include("blog-feed/fetch.php");
+	error_reporting(E_ALL);
+
+ini_set('display_errors', '1');
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -65,6 +71,7 @@ ga('send', 'pageview');
 	</header>
 
 	<section class="intro">
+		<?php $introArticle = $xml->channel->item[0]; ?>
 
 		<div class="pattern-fill"></div>
 
@@ -72,15 +79,21 @@ ga('send', 'pageview');
 
 			<div class="grid-12">
 
-				<a href="https://medium.com/@nannerb/pixel-perfect-design-and-development-on-the-iphone-6-and-6-plus-11dac9f4fa4e" title="Pixel perfect design and development on the iPhone 6 and 6 Plus">
+				<div class="intro-text">
 
-					<span class="sub">Blog</span>
+					<a target="_blank" href="<?php echo $introArticle->link ?>" title="<?php echo $introArticle->title ?>">
 
-					<h2>Pixel perfect design and development on the iPhone 6 and 6 Plus</h2>
+						<span class="sub">Blog</span>
 
-					<p>Apple have introduced support for 3x images on the iPhone 6 Plus, find out what this means for you...</p>
+						<h2><?php echo $introArticle->title ?></h2>
 
-				</a>
+					</a>
+
+					<?php echo $introArticle->description ?>
+
+					<a href="<?php echo $introArticle->link ?>" title="<?php echo $introArticle->title ?>">Read article <i class="fa fa-arrow-circle-o-right"></i></a>
+
+				</div>
 
 			</div><!-- .grid-12 -->
 
@@ -92,45 +105,18 @@ ga('send', 'pageview');
 
 		<div class="grid">
 
-			<article class="grid-4">
-				<a href="https://medium.com/@nannerb/mind-controlled-google-glass-c415e7f991a7" title="Mind controlled Google Glass">
-					<h3>Mind controlled Google Glass, no hands, no voice, just thoughts.</h3>
-					<img src="_includes/images/blog/9.jpg" alt="Mind controlled Google Glass" />
-				</a>
-				<p>No touching, no awkward voice controls, just think of what you want to do and away you go.</p>
-				<a href="https://medium.com/@nannerb/mind-controlled-google-glass-c415e7f991a7" title="Mind controlled Google Glass">Read article <i class="fa fa-arrow-circle-o-right"></i></a>
-	        </article>
-
-			<article class="grid-4">
-				<a href="http://www.creativebloq.com/netmag/google-io-8-biggest-announcements-impact-developers-61412137" title="Google I/O: the 8 biggest announcements that impact developers">
-					<h3>Google I/O: The 8 biggest announcements that impact developers</h3>
-					<img src="_includes/images/blog/8.jpg" alt="Google I/O: the 8 biggest announcements that impact developers" />
-				</a>
-				<p>Big announcements from Google's annual developer conference, and what they mean to you. Written for Net Magazine.</p>
-				<a href="http://www.creativebloq.com/netmag/google-io-8-biggest-announcements-impact-developers-61412137" title="Google I/O: the 8 biggest announcements that impact developers">Read article <i class="fa fa-arrow-circle-o-right"></i></a>
-	        </article>
-
-	        <article class="grid-4">
-				<a href="http://www.marketingmagazine.co.uk/article/1300527/launch-hype-google-glass-enough-drop-glasshole-stigma" title="Is the launch hype of Google Glass enough to drop the 'glasshole' stigma?">
-					<h3>Is the launch hype of Google Glass enough to drop the 'glasshole' stigma?</h3>
-					<img src="_includes/images/blog/7.jpg" alt="Is the launch hype of Google Glass enough to drop the 'glasshole' stigma?" />
-				</a>
-				<p>Will the £1,000 wearable device will deliver any real world value to brands? Written for Marketing.</p>
-				<a href="http://www.marketingmagazine.co.uk/article/1300527/launch-hype-google-glass-enough-drop-glasshole-stigma" title="Is the launch hype of Google Glass enough to drop the 'glasshole' stigma?">Read article <i class="fa fa-arrow-circle-o-right"></i></a>
-	        </article>
-
 			<?php
-			// Because Medium doesn't return images in the xml feed, I've decided to not do the below
-			// and instead take a manual approach.
-			/*
-				include("blog-feed/fetch.php");
-
-				$i = 1;
+			
+				$i = 0;
 
 				foreach ($xml->channel->item as $val) {
+
+					$i++;
+
+					if ($i === 1 || $i > 9) continue;
 		
 			        echo '
-			        <article class="grid-4">
+			        <article class="grid-6">
 						<a href="'.$val->link.'" title="'.$val->title.'">
 							<h3>'.$val->title.'</h3>
 						</a>
@@ -138,15 +124,13 @@ ga('send', 'pageview');
 						<a href="'.$val->link.'" title="'.$val->title.'">Read article <i class="fa fa-arrow-circle-o-right"></i></a>
 			        </article>';
 
-			        if ($i++ == 6) break;
-
 				};
-			*/
+			
 			?>
 
 			<div class="grid-12">
 
-				<a href="https://medium.com/@nannerb" title="Ian Brennan blog on Medium" class="logo-medium">More articles <i class="fa fa-arrow-circle-o-right"></i></a>
+				<a target="_blank" href="https://medium.com/@nannerb" title="Ian Brennan blog on Medium" class="logo-medium">More articles <i class="fa fa-arrow-circle-o-right"></i></a>
 
 			</div><!-- .grid-12 -->
 
@@ -171,66 +155,75 @@ ga('send', 'pageview');
 			</div>
 
 			<article class="grid-4">
-				<a href="http://instagram.com/p/tk5HETChew/?utm_source=partner&utm_medium=embed&utm_campaign=video&modal=true" title="iBeacons + Apple Swift">
+				<a target="_blank" href="http://www.theforceimagined.com/" title="The Force Imagined">
+					<h3>The Force Imagined</h3>
+					<img src="_includes/images/projects/starwars.jpg" alt="The Force Imagined" />
+				</a>
+				<p>From concept to delivery in 6 hours, technologies used: Parse (Backend + Cloud Code), Backbone.js, Grunt, Sass</p>
+				<a target="_blank" href="http://www.theforceimagined.com/" title="The Force Imagined">View website <i class="fa fa-arrow-circle-o-right"></i></a>
+	        </article>
+
+			<article class="grid-4">
+				<a target="_blank" href="http://instagram.com/p/tk5HETChew/?utm_source=partner&utm_medium=embed&utm_campaign=video&modal=true" title="iBeacons + Apple Swift">
 					<h3>iBeacons + Apple Swift</h3>
-					<img src="_includes/images/projects/ibeacons.jpg" alt="http://instagram.com/p/tk5HETChew/?utm_source=partner&utm_medium=embed&utm_campaign=video&modal=true" />
+					<img src="_includes/images/projects/ibeacons.jpg" alt="iBeacons + Apple Swift" />
 				</a>
 				<p>Developed an application in Swift for iPhone's that delivers information as you pass in and out of Bluetooth beacon range. Completed in under 8 hours.</p>
-				<a href="http://instagram.com/p/tk5HETChew/?utm_source=partner&utm_medium=embed&utm_campaign=video&modal=true" title="iBeacons + Apple Swift">View on Instagram <i class="fa fa-arrow-circle-o-right"></i></a>
+				<a target="_blank" href="http://instagram.com/p/tk5HETChew/?utm_source=partner&utm_medium=embed&utm_campaign=video&modal=true" title="iBeacons + Apple Swift">View on Instagram <i class="fa fa-arrow-circle-o-right"></i></a>
 	        </article>
 
 	        <article class="grid-4">
-				<a href="http://instagram.com/p/nK_JX6Chec/?utm_source=partner&utm_medium=embed&utm_campaign=video&modal=true" title="CSS3 Splitflap animations">
+				<a target="_blank" href="http://instagram.com/p/nK_JX6Chec/?utm_source=partner&utm_medium=embed&utm_campaign=video&modal=true" title="CSS3 Splitflap animations">
 					<h3>CSS3 Splitflap animations</h3>
 					<img src="_includes/images/projects/splitflap.jpg" alt="CSS3 Splitflap animations" />
 				</a>
 				<p>A split flap style animation that manipulated dom elements and allows for data visualisation.</p>
-				<a href="http://instagram.com/p/nK_JX6Chec/?utm_source=partner&utm_medium=embed&utm_campaign=video&modal=true" title="CSS3 Splitflap animations">View on Instagram <i class="fa fa-arrow-circle-o-right"></i></a>
+				<a target="_blank" href="http://instagram.com/p/nK_JX6Chec/?utm_source=partner&utm_medium=embed&utm_campaign=video&modal=true" title="CSS3 Splitflap animations">View on Instagram <i class="fa fa-arrow-circle-o-right"></i></a>
 	        </article>
 
 	        <article class="grid-4">
-				<a href="https://scontent-a-lhr.xx.fbcdn.net/hvideo-xpa1/v/t43.1792-2/1737645_10151852323332452_1082960136_n.mp4?oh=11c490232cfaa331b3fb6fa445d16a58&oe=544A581A" title="LEAP Motion Colour Picker">
+				<a target="_blank" href="http://ibrennan.co.uk/leap-motion-colour-picker.mp4" title="LEAP Motion Colour Picker">
 					<h3>LEAP Motion Colour Picker</h3>
 					<img src="_includes/images/projects/colourpicker.jpg" alt="LEAP Motion Colour Picker" />
 				</a>
 				<p>Pick colours through gestures, JS to track the LEAP interaction, and a custom API to match RGB to actual Dulux colours.</p>
-				<a href="https://scontent-a-lhr.xx.fbcdn.net/hvideo-xpa1/v/t43.1792-2/1737645_10151852323332452_1082960136_n.mp4?oh=11c490232cfaa331b3fb6fa445d16a58&oe=544A581A" title="LEAP Motion Colour Picker">View video <i class="fa fa-arrow-circle-o-right"></i></a>
+				<a target="_blank" href="http://ibrennan.co.uk/leap-motion-colour-picker.mp4" title="LEAP Motion Colour Picker">View video <i class="fa fa-arrow-circle-o-right"></i></a>
 	        </article>
 
 	        <article class="grid-4">
-				<a href="https://storify.com/nannerb/analogfolk-hack-festival" title="AnalogFolk Hack Festival on Storify">
+				<a target="_blank" href="https://storify.com/nannerb/analogfolk-hack-festival" title="AnalogFolk Hack Festival on Storify">
 					<h3>AnalogFolk Hack Festival</h3>
 					<img src="_includes/images/projects/hack-festival.jpg" alt="AnalogFolk Hack Festival" />
 				</a>
-				<p>Organised a weekend long Hackathon at <a href="http://analogfolk.com/" target="_blank" title="AnalogFolk">AnalogFolk</a></p>
-				<a href="https://storify.com/nannerb/analogfolk-hack-festival" title="AnalogFolk Hack Festival on Storify">View on Storify <i class="fa fa-arrow-circle-o-right"></i></a>
+				<p>Organised a weekend long Hackathon at <a target="_blank" href="http://analogfolk.com/" target="_blank" title="AnalogFolk">AnalogFolk</a></p>
+				<a target="_blank" href="https://storify.com/nannerb/analogfolk-hack-festival" title="AnalogFolk Hack Festival on Storify">View on Storify <i class="fa fa-arrow-circle-o-right"></i></a>
 	        </article>
 
 	        <article class="grid-4">
-				<a href="https://vimeo.com/77587028" title="AnalogFolk LEAP interaction">
+				<a target="_blank" href="https://vimeo.com/77587028" title="AnalogFolk LEAP interaction">
 					<h3>AnalogFolk LEAP interaction</h3>
 					<img src="_includes/images/projects/afleap.jpg" alt="AnalogFolk LEAP interaction" />
 				</a>
 				<p>Control the AnalogFolk website through LEAP Motion gestures.</p>
-				<a href="https://vimeo.com/77587028" title="AnalogFolk LEAP interaction">View video <i class="fa fa-arrow-circle-o-right"></i></a>
+				<a target="_blank" href="https://vimeo.com/77587028" title="AnalogFolk LEAP interaction">View video <i class="fa fa-arrow-circle-o-right"></i></a>
 	        </article>
 
 			<article class="grid-4">
-				<a href="https://github.com/ibrennan/critical-css-casperjs" title="Critical CSS - CasperJS">
+				<a target="_blank" href="https://github.com/ibrennan/critical-css-casperjs" title="Critical CSS - CasperJS">
 					<h3>Critical CSS - CasperJS</h3>
 					<img src="_includes/images/projects/sassian.jpg" alt="Critical CSS - CasperJS" />
 				</a>
 				<p>A DRY, lightweight, and powerful Compass boilerplate</p>
-				<a href="https://github.com/ibrennan/critical-css-casperjs" title="Critical CSS - CasperJS">View on Github <i class="fa fa-arrow-circle-o-right"></i></a>
+				<a target="_blank" href="https://github.com/ibrennan/critical-css-casperjs" title="Critical CSS - CasperJS">View on Github <i class="fa fa-arrow-circle-o-right"></i></a>
 	        </article>
 
 	        <article class="grid-4">
-				<a href="https://github.com/ibrennan/automation" title="CasperJS Tests and Automation">
+				<a target="_blank" href="https://github.com/ibrennan/automation" title="CasperJS Tests and Automation">
 					<h3>CasperJS Tests and Automation</h3>
 					<img src="_includes/images/projects/automation.jpg" alt="CasperJS Tests and Automation" />
 				</a>
 				<p>Various automated CasperJS scripts for testing and taking the leg work out of tasks</p>
-				<a href="https://github.com/ibrennan/automation" title="CasperJS Tests and Automation">View on Github <i class="fa fa-arrow-circle-o-right"></i></a>
+				<a target="_blank" href="https://github.com/ibrennan/automation" title="CasperJS Tests and Automation">View on Github <i class="fa fa-arrow-circle-o-right"></i></a>
 	        </article>
 
 	        
@@ -260,39 +253,49 @@ ga('send', 'pageview');
 				<p>Born from a hack experiment, each time a colour is viewed on Dulux.co.uk, one of the split flaps animates and gives a real time representation of colour trends. Tech used: CSS3, live data streaming and modelling (JS and PHP).</p>
 	        </article>
 
-			<article class="grid-4">
-			
-				<h3>Dulux MixLab</h3>
-				<img src="_includes/images/projects/dulux-mixlab.jpg" alt="Dulux MixLab" />
+	        <article class="grid-4">
+	        	<a target="_blank" href="https://apps.facebook.com/goofysparkguide/" title="Disney Goofy's Park Guide">
+					<h3>Disney Goofy's Park Guide</h3>
+					<img src="_includes/images/projects/disney.jpg" alt="Disney Goofy's Park Guide" />
+				</a>
+				<p>Create and share personalised Walt Disney World guides through this Goody themed Facebook App. Over a 6 month period, the app achieved: 50,000 users, 260,000 impressions, 3 minute average session duartion.</p>
+	        	<a target="_blank" href="https://apps.facebook.com/goofysparkguide/" title="Disney Goofy's Park Guide">View Facebook App <i class="fa fa-arrow-circle-o-right"></i></a>
+	        </article>
 
-				<p>Concept and Technical Leadership at <a href="http://analogfolk.com/" target="_blank" title="AnalogFolk">AnalogFolk</a> for an offline, touch screen, interactive application. Rolled out across 100's of stores UK wide. Tech used: Sass, Angular JS, PHP, API Modelling</p>
+			<article class="grid-4">
+				<a target="_blank" href="https://vimeo.com/109693943" title="Dulux MixLab">
+					<h3>Dulux MixLab</h3>
+					<img src="_includes/images/projects/dulux-mixlab.jpg" alt="Dulux MixLab" />
+				</a>
+				<p>Concept and Technical Leadership at <a target="_blank" href="http://analogfolk.com/" target="_blank" title="AnalogFolk">AnalogFolk</a> for an offline, touch screen, interactive application. Rolled out across 100's of stores UK wide. Tech used: Sass, Angular JS, PHP, API Modelling</p>
+				<a target="_blank" href="https://vimeo.com/109693943" title="Dulux MixLab">View video <i class="fa fa-arrow-circle-o-right"></i></a>
 	        </article>
 
 	        <article class="grid-4">
-				<a href="http://www.analogfolk.com" title="AnalogFolk">
+				<a target="_blank" href="http://www.analogfolk.com" title="AnalogFolk">
 					<h3>AnalogFolk</h3>
 					<img src="_includes/images/projects/analogfolk.jpg" alt="AnalogFolk" />
 				</a>
-				<p>Lead the team of 3 developers to build and deploy the new <a href="http://analogfolk.com/" target="_blank" title="AnalogFolk">AnalogFolk</a> website. Tech used: PHP, Wordpress, Sass, History API, JS</p>
-				<a href="http://www.analogfolk.com" title="AnalogFolk">View website <i class="fa fa-arrow-circle-o-right"></i></a>
+				<p>Lead the team of 3 developers to build and deploy the new <a target="_blank" href="http://analogfolk.com/" target="_blank" title="AnalogFolk">AnalogFolk</a> website. Tech used: PHP, Wordpress, Sass, History API, JS</p>
+				<a target="_blank" href="http://www.analogfolk.com" title="AnalogFolk">View website <i class="fa fa-arrow-circle-o-right"></i></a>
 	        </article>
 
 			<article class="grid-4">
-				<a href="http://www.duluxtradepaintexpert.co.uk/" title="Dulux Trade Paint Expert">
+				<a target="_blank" href="http://www.duluxtradepaintexpert.co.uk/" title="Dulux Trade Paint Expert">
 					<h3>Dulux Trade Paint Expert</h3>
 					<img src="_includes/images/projects/dulux-trade-paint-expert.jpg" alt="Dulux Trade Paint Expert" />
 				</a>
-				<p>Lead the team of 7 developers at <a href="http://analogfolk.com/" target="_blank" title="AnalogFolk">AnalogFolk</a> to create a large platform build. Tech used: Sass, Grunt, Backbone, JSP, PHP, API Modelling</p>
-				<a href="http://www.duluxtradepaintexpert.co.uk/" title="Dulux Trade Paint Expert">View website <i class="fa fa-arrow-circle-o-right"></i></a>
+				<p>Lead the team of 7 developers at <a target="_blank" href="http://analogfolk.com/" target="_blank" title="AnalogFolk">AnalogFolk</a> to create a large platform build. Tech used: Sass, Grunt, Backbone, JSP, PHP, API Modelling</p>
+				<a target="_blank" href="http://www.duluxtradepaintexpert.co.uk/" title="Dulux Trade Paint Expert">View website <i class="fa fa-arrow-circle-o-right"></i></a>
 	        </article>
 
 	        <article class="grid-4">
-				<a href="http://www.dulux.co.uk/" title="Dulux.co.uk">
+				<a target="_blank" href="http://www.dulux.co.uk/" title="Dulux.co.uk">
 					<h3>Dulux.co.uk</h3>
 					<img src="_includes/images/projects/dulux.jpg" alt="Dulux.co.uk" />
 				</a>
-				<p>Implemented infrastructure and process to ensure the retained maintenance team at <a href="http://analogfolk.com/" target="_blank" title="AnalogFolk">AnalogFolk</a> can perform weekly releases to the platform.</p>
-				<a href="http://www.dulux.co.uk/" title="Dulux.co.uk">View website <i class="fa fa-arrow-circle-o-right"></i></a>
+				<p>Implemented infrastructure and process to ensure the retained maintenance team at <a target="_blank" href="http://analogfolk.com/" target="_blank" title="AnalogFolk">AnalogFolk</a> can perform weekly releases to the platform.</p>
+				<a target="_blank" href="http://www.dulux.co.uk/" title="Dulux.co.uk">View website <i class="fa fa-arrow-circle-o-right"></i></a>
 	        </article>
 
 			<div class="grid-12">
@@ -325,7 +328,7 @@ ga('send', 'pageview');
 
 				<p>Using languages and tools such as JavaScript, Sass, CasperJS, PHP, Node, and Grunt, I like to rapidly prototype technically creative products and ideas.</p>
 
-				<p>You can follow me on <a href="https://twitter.com/nannerb" title="Ian Brennan - Twitter">Twitter</a> and <a href="http://instagram.com/ibrennan" title="Ian Brennan - Instagram">Instagram</a>, or read more about my career on <a href="http://uk.linkedin.com/pub/ian-brennan/80/632/224" title="Ian Brennan - LinkedIn">LinkedIn</a>.</p>
+				<p>You can follow me on <a target="_blank" href="https://twitter.com/nannerb" title="Ian Brennan - Twitter">Twitter</a> and <a target="_blank" href="http://instagram.com/ibrennan" title="Ian Brennan - Instagram">Instagram</a>, or read more about my career on <a target="_blank" href="http://uk.linkedin.com/pub/ian-brennan/80/632/224" title="Ian Brennan - LinkedIn">LinkedIn</a>.</p>
 
 			</div>
 
