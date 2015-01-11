@@ -1,24 +1,21 @@
 <?php
 	include("blog-feed/fetch.php");
-	error_reporting(E_ALL);
-
-ini_set('display_errors', '1');
 ?>
 <!doctype html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Ian Brennan - Hack, Build, Innovate</title>
+    <title>Ian Brennan - Hack, Build, Share</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=320" />
 
     <meta property="og:site_name" content="Ian Brennan" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://ibrennan.co.uk" />
-	<meta property="og:image" content="http://ibrennan.co.uk/profile.jpg" />
-	<meta property="og:title" content="Ian Brennan - Hack, Build, Innovate" />
-	<meta property="og:description" content="I'm a passionate Creative Technologist who heads up the development team at AnalogFolk. Leading a team of talented developers who regularly ship exciting projects across for a wide variety of clients." />
+	<meta property="og:image" content="http://ibrennan.co.uk/_includes/images/profile.jpg" />
+	<meta property="og:title" content="Ian Brennan - Hack, Build, Share" />
+	<meta property="og:description" content="I'm a passionate Creative Technologist who heads up technical concepting at AnalogFolk. Leading a team of talented developers who regularly ship exciting projects across for a wide variety of clients." />
 
 	<!--###################################################################
 
@@ -28,7 +25,7 @@ ini_set('display_errors', '1');
 	####################################################################-->
 
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
-	<link href='_includes/css/main.css?v=3' rel='stylesheet' type='text/css'>
+	<link href='_includes/css/main.css?v=4' rel='stylesheet' type='text/css'>
 
     <script src="_includes/js/vendor/modernizr.js"></script>
 
@@ -348,6 +345,6 @@ ga('send', 'pageview');
 	</footer>
 
 	<script src="_includes/js/vendor/jquery.js"></script>
-	<script src="_includes/js/main.js"></script>
+	<script src="_includes/js/main.js?v=4"></script>
 </body>
 </html>
