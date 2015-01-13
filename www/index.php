@@ -326,6 +326,8 @@ ga('send', 'pageview');
 
 				<p>Using languages and tools such as JavaScript, Sass, CasperJS, PHP, Node, and Grunt, I like to rapidly prototype technically creative products and ideas.</p>
 
+				<p>I strongly believe in sharing knowledge and code as often as possible. Which is why the source for this site, along with some of my other hacks and projects, is available for everyone to view on <a href="https://github.com/ibrennan" title="GitHub - Ian Brennan"  target="_blank">GitHub</a>.</p>
+
 				<p>You can follow me on <a target="_blank" href="https://twitter.com/nannerb" title="Ian Brennan - Twitter">Twitter</a> and <a target="_blank" href="http://instagram.com/ibrennan" title="Ian Brennan - Instagram">Instagram</a>, or read more about my career on <a target="_blank" href="http://uk.linkedin.com/pub/ian-brennan/80/632/224" title="Ian Brennan - LinkedIn">LinkedIn</a>.</p>
 
 			</div>
