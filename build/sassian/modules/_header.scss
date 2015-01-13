@@ -10,14 +10,39 @@ header {
 			opacity: 0.8;
 		}
 	}
+
 	a.mobile-nav {
-		display: none;
+		@include rem(font-size, 1.8);
+		position: absolute;
+		right: 10px;
+		top: 27px;
+
+		&:before {
+			margin-right: 10px;
+		}
 	}
-	nav {
-		display: none;
-		float: right;
+
+	#mobile-nav {
+		@include transition-property(left, right, box-shadow);
+		@include transition-duration(300ms);
+		@include box-shadow(0 0 0 680px rgba(0,0,0,0), 0 0 8px rgba(0,0,0,0));
+		position: fixed;
+		left: -100%;
+		top: 0;
+		right: 100%;
+		bottom: 0;
+		background-color: #fff;
+		z-index: 999;
+		padding: 20px 0 0;
+
+		&:target {
+			@include box-shadow(0 0 0 680px rgba(0,0,0,0.4), 0 0 8px rgba(0,0,0,0.8));
+			left: 0;
+			right: 20px;
+		}
 
 		a {
+			@include rem(font-size, 2);
 			color: $colour-base;
 
 			&:hover,
@@ -26,19 +51,52 @@ header {
 				color: $colour-tertiary;
 			}
 		}
+
+		li {
+			padding: 8px 0 8px 30px;
+		}
+			
+		.fa-times-circle {
+			@include rem(font-size, 2.4);
+			position: absolute;
+			right: 10px;
+			top: 10px;
+		}
 	}
 
 	@include breakpoint(tablet){
 
-		nav {
-			display: block;
+		a.mobile-nav {
+			display: none;
+		}
+
+		#mobile-nav {
+			float: right;
+			position: static;
+			padding: 0 10px 0 0;
+
+			a {
+				@include rem(font-size, 1.4);
+			}
 
 			li {
 				float: left;
 				padding: 8px 0 0 30px;
 			}
 
+			.fa-times-circle { 
+				display: none;
+			}
+
 		}
 
+	}
+
+	@include breakpoint(desktop){
+
+		#mobile-nav {
+			padding: 0;
+		}
+		
 	}
 }

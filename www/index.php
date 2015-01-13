@@ -25,7 +25,7 @@
 	####################################################################-->
 
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
-	<link href='_includes/css/main.css?v=4' rel='stylesheet' type='text/css'>
+	<link href='_includes/css/main.css?v=5' rel='stylesheet' type='text/css'>
 
     <script src="_includes/js/vendor/modernizr.js"></script>
 
@@ -52,6 +52,7 @@ ga('send', 'pageview');
 				<a href="#mobile-nav" class="fa fa-bars mobile-nav">Menu</a>
 
 				<nav id="mobile-nav">
+					<a href="#" class="fa fa-times-circle"></a>
 					<ul>
 						<li><a href="#" title="Home">Home</a></li>
 						<li><a href="#blog" title="Blog">Blog</a></li>
@@ -178,7 +179,7 @@ ga('send', 'pageview');
 				<a target="_blank" href="http://instagram.com/p/nK_JX6Chec/?utm_source=partner&utm_medium=embed&utm_campaign=video&modal=true" title="CSS3 Splitflap animations">View on Instagram <i class="fa fa-arrow-circle-o-right"></i></a>
 	        </article>
 
-	        <article class="grid-4">
+	        <article class="grid-4 clear">
 				<a target="_blank" href="http://ibrennan.co.uk/leap-motion-colour-picker.mp4" title="LEAP Motion Colour Picker">
 					<h3>LEAP Motion Colour Picker</h3>
 					<img src="_includes/images/projects/colourpicker.jpg" alt="LEAP Motion Colour Picker" />
@@ -205,7 +206,7 @@ ga('send', 'pageview');
 				<a target="_blank" href="https://vimeo.com/77587028" title="AnalogFolk LEAP interaction">View video <i class="fa fa-arrow-circle-o-right"></i></a>
 	        </article>
 
-			<article class="grid-4">
+			<article class="grid-4 clear">
 				<a target="_blank" href="https://github.com/ibrennan/critical-css-casperjs" title="Critical CSS - CasperJS">
 					<h3>Critical CSS - CasperJS</h3>
 					<img src="_includes/images/projects/sassian.jpg" alt="Critical CSS - CasperJS" />
@@ -268,7 +269,7 @@ ga('send', 'pageview');
 				<a target="_blank" href="https://vimeo.com/109693943" title="Dulux MixLab">View video <i class="fa fa-arrow-circle-o-right"></i></a>
 	        </article>
 
-	        <article class="grid-4">
+	        <article class="grid-4 clear">
 				<a target="_blank" href="http://www.analogfolk.com" title="AnalogFolk">
 					<h3>AnalogFolk</h3>
 					<img src="_includes/images/projects/analogfolk.jpg" alt="AnalogFolk" />
@@ -345,6 +346,6 @@ ga('send', 'pageview');
 	</footer>
 
 	<script src="_includes/js/vendor/jquery.js"></script>
-	<script src="_includes/js/main.js?v=4"></script>
+	<script src="_includes/js/main.js?v=5"></script>
 </body>
 </html>

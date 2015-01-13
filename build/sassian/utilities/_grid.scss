@@ -38,7 +38,7 @@ Example:
 	margin: 0 auto;
 	width: 100%;
 
-	@include breakpoint(tablet) {
+	@include breakpoint(desktop) {
 		position: relative;
 		width: $grid-width;
 	}
@@ -69,7 +69,7 @@ $gridColumnWidth : 100 / $grid-columns + 0%;
   
 }
 
-@include breakpoint(tablet) {
+@include breakpoint(desktop) {
 
 	@for $i from 1 to $grid-columns + 1 {
 		.offset-#{$i} {

@@ -1,5 +1,6 @@
 article {
 	@include rem(padding, 1);
+	@include rem(margin-bottom, 3);
 
 	img {
 		margin-bottom: 10px;

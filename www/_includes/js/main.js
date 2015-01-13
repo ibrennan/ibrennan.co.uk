@@ -6,8 +6,25 @@ var application = {
 		self.intro.init();
 
 		self.blog.init();
+
+		self.resize.init();
 		
 	}, // init
+
+	resize : {
+
+		init : function(){
+			var self = this;
+
+			window.addEventListener('resize', function(event){
+
+				application.blog.balanceTitles();
+
+			});
+
+		} // init
+
+	}, // resize
 
 	intro : {
 
@@ -43,37 +60,41 @@ var application = {
 		init: function(){
 			var self = this;
 
-			if(!application.helpers.isMobile()){
-
-				self.balanceTitles();
-
-			}
+			self.balanceTitles();
 
 		}, // init
 
 		balanceTitles : function(){
 			var self = this;
 
-			// Make all our blog titles the same height on each row
-
 			var $blog = $("section.blog");
 
-			$blog.find("article:odd").each(function(){
+			if(!application.helpers.isMobile()){
 
-				var $title1 = $(this).find("h3"),
-					$title2 = $(this).prev("article").find("h3");
+				// Make all our blog titles the same height on each row
 
-				if($title1.height() > $title2.height()){
+				$blog.find("article:odd").each(function(){
 
-					$title2.css("height", $title1.height());
+					var $title1 = $(this).find("h3"),
+						$title2 = $(this).prev("article").find("h3");
 
-				} else {
+					if($title1.height() > $title2.height()){
 
-					$title1.css("height", $title2.height());
+						$title2.css("height", $title1.height());
 
-				};
+					} else {
 
-			});
+						$title1.css("height", $title2.height());
+
+					};
+
+				});
+
+			} else {
+
+				$blog.find("article h3").css("height", "auto");
+
+			}
 
 		}
 	}, // blog

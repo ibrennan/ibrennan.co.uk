@@ -1,9 +1,5 @@
 .projects {
 
-	article {
-		@include rem(height, 40);
-	}
-
 	@include breakpoint(tablet){
 
 		h3 {
