@@ -8,6 +8,14 @@ var application = {
 		self.blog.init();
 
 		self.resize.init();
+
+		$("a[href^='#']").click(function(e){
+
+			e.preventDefault();
+
+			self.helpers.scrollTo( $( $(this).attr("href") ) );
+
+		});
 		
 	}, // init
 
@@ -113,7 +121,17 @@ var application = {
 
 			}
 
-		} // isMobile
+		}, // isMobile
+
+		scrollTo : function($target, speed){
+
+			var speed = speed || 600;
+
+			$(document.body).animate({
+			    'scrollTop':   $target.offset().top
+			}, speed);
+
+		}
 
 	} // helpers
 

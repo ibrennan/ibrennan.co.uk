@@ -1,5 +1,14 @@
 <?php
 	include("blog-feed/fetch.php");
+	function titleParse($title){
+		$title = $title;
+		$pos = strpos($title, '" in');
+		if($pos){
+			$title = substr($title, 0, $pos);
+			$title = str_replace('"', '', $title);
+		};
+		return $title;
+	};
 ?>
 <!doctype html>
 <html lang="en">
@@ -25,7 +34,7 @@
 	####################################################################-->
 
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
-	<link href='_includes/css/main.css?v=5' rel='stylesheet' type='text/css'>
+	<link href='_includes/css/main.css?v=6' rel='stylesheet' type='text/css'>
 
     <script src="_includes/js/vendor/modernizr.js"></script>
 
@@ -56,6 +65,7 @@ ga('send', 'pageview');
 					<ul>
 						<li><a href="#" title="Home">Home</a></li>
 						<li><a href="#blog" title="Blog">Blog</a></li>
+						<li><a href="#publications" title="Publications">Publications</a></li>
 						<li><a href="#projects" title="Projects">Hacks &amp; Projects</a></li>
 						<li><a href="#portfolio" title="Portfolio">Portfolio</a></li>
 						<li><a href="#about" title="About">About</a></li>
@@ -83,7 +93,7 @@ ga('send', 'pageview');
 
 						<span class="sub">Blog</span>
 
-						<h2><?php echo $introArticle->title ?></h2>
+						<h2><?php echo titleParse($introArticle->title); ?></h2>
 
 					</a>
 
@@ -111,12 +121,12 @@ ga('send', 'pageview');
 
 					$i++;
 
-					if ($i === 1 || $i > 9) continue;
-		
+					if ($i === 1 || $i > 5) continue;
+
 			        echo '
 			        <article class="grid-6">
 						<a href="'.$val->link.'" title="'.$val->title.'">
-							<h3>'.$val->title.'</h3>
+							<h3>'.titleParse($val->title).'</h3>
 						</a>
 						'.$val->description.'
 						<a href="'.$val->link.'" title="'.$val->title.'">Read article <i class="fa fa-arrow-circle-o-right"></i></a>
@@ -132,15 +142,61 @@ ga('send', 'pageview');
 
 			</div><!-- .grid-12 -->
 
-			<div class="grid-12">
-
-				<hr>
-
-			</div><!-- .grid-12 -->
-
 		</div><!-- .grid -->
 
 	</section><!-- .blog -->
+
+	<section class="publications" id="publications">
+
+		<div class="grid">
+
+			<div class="grid-12">
+				<h1>Publications</h1>
+			</div>
+
+			<article class="grid-4">
+				<a target="_blank" href="http://www.marketingmagazine.co.uk/article/1337497/apple-watch-launch-7-things-marketers-need-know" title="Apple Watch launch: 7 things marketers need to know">
+					<h3>Apple Watch launch: 7 things marketers need to know</h3>
+
+					<i class="logo logo-marketing"></i> View article <i class="fa fa-arrow-circle-o-right"></i>
+				</a>
+	        </article>
+
+	        <article class="grid-4">
+				<a target="_blank" href="http://www.marketingmagazine.co.uk/article/1330566/microsoft-back-track-thanks-holograms-new-web-browsers" title="Microsoft is 'back on track' thanks to holograms and new web browsers">
+					<h3>Microsoft is 'back on track' thanks to holograms and new web browsers</h3>
+
+					<i class="logo logo-marketing"></i> View article <i class="fa fa-arrow-circle-o-right"></i>
+				</a>
+	        </article>
+
+	        <article class="grid-4">
+				<a target="_blank" href="http://www.creativebloq.com/netmag/how-hack-better-music-festival-71412315" title="How to hack a better music festival">
+					<h3>How to hack a better music festival</h3>
+
+					<i class="logo logo-creativebloq"></i> View article <i class="fa fa-arrow-circle-o-right"></i>
+				</a>
+	        </article>
+
+	        <article class="grid-4 clear">
+				<a target="_blank" href="http://analogfolk.com/blog/our-top-technology-picks-from-ces-2015/" title="Top technology picks from CES 2015">
+					<h3>Top technology picks from CES 2015</h3>
+
+					<i class="logo logo-af"></i> View article <i class="fa fa-arrow-circle-o-right"></i>
+				</a>
+	        </article>
+
+	        <article class="grid-4">
+				<a target="_blank" href="http://www.creativebloq.com/netmag/google-io-8-biggest-announcements-impact-developers-61412137" title="Google I/O: the 8 biggest announcements that impact developers">
+					<h3>Google I/O: the 8 biggest announcements that impact developers</h3>
+
+					<i class="logo logo-creativebloq"></i> View article <i class="fa fa-arrow-circle-o-right"></i>
+				</a>
+	        </article>
+
+		</div><!-- .grid -->
+
+	</section><!-- .publications -->
 
 	<section class="projects" id="projects">
 
@@ -314,7 +370,7 @@ ga('send', 'pageview');
 
 			<div class="grid-3">
 
-				<img src="_includes/images/profile.jpg" alt="Ian Brennan">
+				<img src="_includes/images/profile.png" alt="Ian Brennan">
 
 			</div>
 
@@ -332,12 +388,6 @@ ga('send', 'pageview');
 
 			</div>
 
-			<div class="grid-12">
-
-				<hr>
-
-			</div><!-- .grid-12 -->
-
 		</div><!-- .grid -->
 
 	</section><!-- .about -->
@@ -348,6 +398,6 @@ ga('send', 'pageview');
 	</footer>
 
 	<script src="_includes/js/vendor/jquery.js"></script>
-	<script src="_includes/js/main.js?v=5"></script>
+	<script src="_includes/js/main.js?v=6"></script>
 </body>
 </html>
