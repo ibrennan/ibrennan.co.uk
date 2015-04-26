@@ -301,13 +301,31 @@ ga('send', 'pageview');
 			</div>
 
 			<article class="grid-4">
+				<a target="_blank" href="https://apps.facebook.com/whereverlifetakesyou/" title="Pandora Wherever Life Takes You">
+					<h3>Pandora Wherever Life Takes You</h3>
+					<img src="_includes/images/projects/pandora.jpg" alt="Pandora Wherever Life Takes You" />
+				</a>
+				<p>Facebook application for Pandora. Backend built in Parse, utilisng Cloud Code and Node.js. </p>
+				<a target="_blank" href="https://apps.facebook.com/whereverlifetakesyou/" title="Pandora Wherever Life Takes You">View Facebook app <i class="fa fa-arrow-circle-o-right"></i></a>
+	        </article>
+
+			<article class="grid-4">
+				<a target="_blank" href="http://tech-cards.analogfolk.com/" title="Top Tech Cards">
+					<h3>Top Tech Cards</h3>
+					<img src="_includes/images/projects/tech-cards.jpg" alt="Top Tech Cards" />
+				</a>
+				<p>Describing and scoring the latest technologies, built in Backbone.js. Part of <a target="_blank" href="http://make.analogfolk.com/" target="_blank" title="AnalogFolk Make">AnalogFolk Make</a>.</p>
+				<a target="_blank" href="http://tech-cards.analogfolk.com/" title="AnalogFolk">View website <i class="fa fa-arrow-circle-o-right"></i></a>
+	        </article>
+
+			<article class="grid-4">
 				<h3>Data Visualisation</h3>
 				<img src="_includes/images/projects/dulux-data.jpg" alt="Data Visualisation" />
 
 				<p>Born from a hack experiment, each time a colour is viewed on Dulux.co.uk, one of the split flaps animates and gives a real time representation of colour trends. Tech used: CSS3, live data streaming and modelling (JS and PHP).</p>
 	        </article>
 
-	        <article class="grid-4">
+	        <article class="grid-4 clear">
 	        	<a target="_blank" href="https://apps.facebook.com/goofysparkguide/" title="Disney Goofy's Park Guide">
 					<h3>Disney Goofy's Park Guide</h3>
 					<img src="_includes/images/projects/disney.jpg" alt="Disney Goofy's Park Guide" />
@@ -325,15 +343,6 @@ ga('send', 'pageview');
 				<a target="_blank" href="https://vimeo.com/109693943" title="Dulux MixLab">View video <i class="fa fa-arrow-circle-o-right"></i></a>
 	        </article>
 
-	        <article class="grid-4 clear">
-				<a target="_blank" href="http://www.analogfolk.com" title="AnalogFolk">
-					<h3>AnalogFolk</h3>
-					<img src="_includes/images/projects/analogfolk.jpg" alt="AnalogFolk" />
-				</a>
-				<p>Lead the team of 3 developers to build and deploy the new <a target="_blank" href="http://analogfolk.com/" target="_blank" title="AnalogFolk">AnalogFolk</a> website. Tech used: PHP, Wordpress, Sass, History API, JS</p>
-				<a target="_blank" href="http://www.analogfolk.com" title="AnalogFolk">View website <i class="fa fa-arrow-circle-o-right"></i></a>
-	        </article>
-
 			<article class="grid-4">
 				<a target="_blank" href="http://www.duluxtradepaintexpert.co.uk/" title="Dulux Trade Paint Expert">
 					<h3>Dulux Trade Paint Expert</h3>
@@ -343,7 +352,7 @@ ga('send', 'pageview');
 				<a target="_blank" href="http://www.duluxtradepaintexpert.co.uk/" title="Dulux Trade Paint Expert">View website <i class="fa fa-arrow-circle-o-right"></i></a>
 	        </article>
 
-	        <article class="grid-4">
+	        <article class="grid-4 clear">
 				<a target="_blank" href="http://www.dulux.co.uk/" title="Dulux.co.uk">
 					<h3>Dulux.co.uk</h3>
 					<img src="_includes/images/projects/dulux.jpg" alt="Dulux.co.uk" />

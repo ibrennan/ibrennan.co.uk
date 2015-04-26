@@ -9,7 +9,7 @@ var application = {
 
 		self.resize.init();
 
-		$("a[href^='#']").click(function(e){
+		$("a[href^='#']").not("a[href^='#mobile-nav']").click(function(e){
 
 			e.preventDefault();
 
@@ -129,7 +129,11 @@ var application = {
 
 			$(document.body).animate({
 			    'scrollTop':   $target.offset().top
-			}, speed);
+			}, speed, function(){
+
+				window.location.hash = $target.attr("id").replace("#","");
+
+			});
 
 		}
 

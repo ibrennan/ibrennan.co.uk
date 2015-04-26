@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "_default": {
+            "link": "ibrennan"
+        }, 
+        "ibrennan": {
+            "applicationId": "8jqQYZ6RjH9Xqpx7El79lHnRSD5gm458bkIB1KH5", 
+            "masterKey": "4bHysxXUxtHnCpZR71L5sWp0riQIZZP4AMt0yvnZ"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.4.2"
+    }
+}
